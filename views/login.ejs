@@ -1,0 +1,15 @@
+<%- include("templates/header") %>
+<h1 class="mt-5 mb-5 text-center">Log in</h1>
+<form action='/loginSubmit' method='post'>
+    <div class="mb-3 w-50">
+        <label for="exampleInputEmail2" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email"/>
+    </div>
+   
+    <div class="mb-3 w-50">
+        <label for="exampleInputPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<%- include("templates/footer") %>

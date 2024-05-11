@@ -1,0 +1,6 @@
+<li class="mb-5"> <%= user.username %> : <%=user.user_type %>
+    <form action="/changeType?username=<%= user.username %>" method="post" class="btn-group" role="group" aria-label="Basic example">
+        <button type="submit" name="targetType" value="admin" class="btn btn-warning">Promote to Admin</button>
+        <button type="submit" name="targetType" value="user" class="btn btn-success">Demote to User</button>
+    </form> 
+</li>

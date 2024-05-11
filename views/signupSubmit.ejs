@@ -1,0 +1,11 @@
+<%- include("templates/header") %>
+<% if (errors && errors.length > 0) { %>
+    <h2 class="mt-5 mb-5">Please provide the information below:</h2>
+    <ul>
+        <% errors.forEach(function(error) { %>
+            <li><%= error %></li>
+        <% }); %>
+    </ul>
+    <a href="/">Try again</a>
+<% } %>
+<%- include("templates/footer") %>
